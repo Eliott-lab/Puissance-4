@@ -220,7 +220,7 @@ while True:
             if event.type == pygame.MOUSEMOTION:
                 x_pointer_value = pointer_pos(pygame.mouse.get_pos()) 
             if event.type == pygame.MOUSEBUTTONDOWN :# if the player click
-                 if play(grid,x_pointer_value,color):#if the play is allowed
+                if play(grid,x_pointer_value,color):#if the play is allowed
                     if check_for_victory(color,grid) :#if there is a victory
                         pygame.mixer.music.play(-1)# play the music
                         if color == "blue":
@@ -271,5 +271,4 @@ while True:
         screen.fill("white")
         board_update(grid)
         screen.blit(play_again_sprite,play_again_surf)
-           
     pygame.display.flip() #refreshing the window with new element 
